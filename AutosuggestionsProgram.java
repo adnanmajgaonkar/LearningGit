@@ -17,7 +17,7 @@ public class AutosuggestionsProgram {
 		driver.get("https://www.google.com");
 		WebElement search = driver.findElement(By.name("q"));
 		search.sendKeys("Learning Java");
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		List<WebElement> list = driver.findElements(By.xpath("((//ul[@class='G43f7e'])[1]/li)/div[@class='eIPGRd']"));
 		Thread.sleep(2000);
 		WebElement index = list.get(3);
